@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Les petits plats - Vos meilleures recettes de cuisine" name="description" />
+    <link rel="icon" href="./assets/image/icone.png" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f2e0ae9aa.js" crossorigin="anonymous"></script>
+    <title>Les Petits Plats - Vos meilleures recettes</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/image/logo.svg" class="header__logo" alt="" />
+    </header>
+
+    <main class="main">
+      <section class="search">
+        <div class="search__input-group">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Rechercher un ingrédient, un appareil, un ustensile, une recette..."
+          />
+          <button class="search__button">
+            <img src="./assets/image/loupe.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section id="tags__selected">
+        <div class="tag__ingredients--wrapper"></div>
+        <div class="tag__appliances--wrapper"></div>
+        <div class="tag__ustensils--wrapper"></div>
+      </section>
+
+      <section id="filters">
+        <div class="filter__ingredients"></div>
+        <div class="filter__appliances"></div>
+        <div class="filter__ustensils"></div>
+      </section>
+      
+      <section id="recipes__cards">
+      </section>
+      <span class="no-result-message"></span>
+    </main>
+    <script src="./scripts/main_index/index.js"></script>
+    <script src="./scripts/main_index/recipes_cards.js"></script>
+    <script src="./scripts/utils/filters_create.js"></script>
+    <script src="./scripts/utils/filters_fill.js"></script>
+    <script src="./scripts/utils/filters_input.js"></script>
+    <script src="./scripts/utils/tags.js"></script>
+    <script src="./scripts/utils/search_bar.js"></script> 
+  </body>
+</html>
